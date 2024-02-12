@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="password" name="" id="pwd">
+    <button type="submit" onclick="check()">check</button>
+    <script>
+function check(){
+
+    let pswd = document.getElementById("pwd").value;
+    if(pswd.length<8){
+        alert("Password Should 8 Characters long");
+        return false;
+    }
+    
+
+    if(!/[A-Z]/.test(pswd)){
+        alert("Please Include an Uppercase letters");
+        return false;
+    }
+
+    if(!/\d/.test(pswd)){
+        alert("Please Include a digit");
+        return false;
+    }
+    return alert("password is saved");
+}
+    </script>
+</body>
+</html>

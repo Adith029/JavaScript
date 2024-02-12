@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="num">
+    <button type="submit" onclick="find()">Find</button>
+    <script>
+        function find() {
+            let a = parseInt(document.getElementById("num").value);
+            let num = 0, secondNo = 0, thirdNo = 0;
+            
+            while (num <= a) {
+                
+                document.write(num);
+               
+                thirdNo = num + secondNo;
+                num = secondNo;
+                secondNo = thirdNo;
+                num++;
+                
+            }
+            
+        }
+    </script>
+</body>
+</html>

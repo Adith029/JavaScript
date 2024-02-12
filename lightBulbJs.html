@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img style="margin-top: 200px; margin-left: 900px;" id="img"src="https://i.pinimg.com/236x/79/b7/aa/79b7aa9766cb60d55c953355e404a5d2.jpg" alt="" height="500px" width="300px">
+    <button type="button" onclick="on()">ON</button>
+    <button type="button" onclick="off()">Off</button>
+    <script>
+        function on(){
+            let image=document.getElementById("img");
+            
+            image.style.width="300px";
+            image.style.height="500px";
+            if(image.src.match("i.pinimg.com")){
+                image.src="https://i.pinimg.com/236x/f1/aa/d9/f1aad9ce687c1b1019fe8335fd787f10.jpg";
+            }
+        }
+        
+        function off(){
+            let image=document.getElementById("img");
+            image.style.width="300px";
+            image.style.height="500px";
+            if(image.src.match("d9")){
+                image.src="https://i.pinimg.com/236x/79/b7/aa/79b7aa9766cb60d55c953355e404a5d2.jpg";
+             }
+        }
+
+    </script>
+</body>
+</html>

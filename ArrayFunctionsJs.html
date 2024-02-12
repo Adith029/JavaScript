@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=["orange","Apple","three","four"];
+        console.log(a);
+        // a.pop()
+        // console.log(a);
+        // a.push("five");
+        // console.log(a);
+        // delete a[2];
+        // console.log(a);
+        // a.splice(1,2,"six","seven");
+        // let b= a.slice(0,2);
+        // console.log(b);
+
+        document.write(a+"<br>");
+        a.forEach(function(name){;
+        document.write(name +"<br>")});
+
+        let arr=[1,2,5,4,3,6];
+        arr.forEach(function(name){
+            document.write(name+"<br>")
+        })
+
+        a.sort(function(a,b){
+            return(a-b);
+            
+        });
+        document.write(a);
+    </script>
+</body>
+</html>

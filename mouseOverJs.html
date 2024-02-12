@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1" onmouseover="hi()"> Hello World!!!</h1>
+    Enter Text Here: <input type="text" id="text">
+    <script>
+       
+       function hi(){
+        let a=document.getElementById("h1");
+        a.addEventListener('mouseover',function Mouseover(){
+            a.style.color="red";
+        });
+
+        a.addEventListener('mouseout',function Mouseout(){
+            a.style.color="black";
+        });
+       
+       }
+       
+    </script>
+</body>
+</html>

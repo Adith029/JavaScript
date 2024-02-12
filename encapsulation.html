@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Employee{
+            
+            setEmployee(name,id,phone){
+                this.name=name;
+                this.id=200;
+                this.phone=phone;
+
+            }
+
+            getname(){
+                console.log(this.name);
+            }
+            getid(){
+                console.log(this.id);
+            }
+            getphone(){
+                console.log(this.phone);
+            }
+
+        }
+
+        let emp = new Employee();
+        emp.setEmployee("jishnu",'',2345678);
+        emp.getname();
+        emp.getid();
+        emp.getphone();
+    </script>
+    
+</body>
+</html>

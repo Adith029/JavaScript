@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<section>
+    <button type="button" onclick="createpara()">Create</button>
+    <button type="button" onclick="deletepara()">Delete</button>
+</section>
+    <script>
+        function createpara(){
+            let para =document.createElement("p");
+            para.textContent ="Hello World!!!...";
+            let sec = document.querySelector("section");
+            sec.appendChild(para);
+        }
+
+        function deletepara(){
+            let sec = document.querySelector("section");
+            let para= sec.querySelector("p")
+            sec.removeChild(para);
+            
+        }
+    </script>
+</body>
+</html>

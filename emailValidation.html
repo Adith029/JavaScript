@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="email" id="email">
+    <button type="button" onclick="check()">Check </button>
+
+    <script>
+        function check(){
+        let email= document.getElementById("email").value;
+        let regex =/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (regex.test(email)){
+            console.log("is Valid");
+
+        }else{
+            console.log("Not Valid");
+        }
+
+    }
+    </script>
+</body>
+</html>
